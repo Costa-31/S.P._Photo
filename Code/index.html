@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="logo-title">
+       <!-- <div class="first_pic"></div> -->
+       <div class="picanimation">
+         <img class="topAnimation" src="./IMG_Photos/1.jpg" alt="top_pic">
+         <img class="midleAnimation" src="./IMG_Photos/2.jpg" alt="midle_pic">
+         <img class="bottomAnimation" src="./IMG_Photos/3.jpg" alt="bottom_pic">
+       </div>
+       <span class="sideOpen" onclick="openNav()">Információ</span>
+       <div id="mySidenav" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#content1" title="Kvalitásaim"><img src="./IMG_Fonts/cam_pic.png" alt="cam_pic">Eszközeim</a>
+          <a href="#card-pictures" title="Képek"><img src="./IMG_Fonts/img_pic.png" alt="img_pic">Képek</a>
+          <a href="#aboutme" title="Rólam"><img src="./IMG_Fonts/user_pic.png" alt="user_pic">Rólam</a>
+          <a href="#Conacts" title="Contact"><img src="./IMG_Fonts/cont_pic.png" alt="cont_pic">Kapcsolat</a>
+          </div>
+         
+      </nav>
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img src="./IMG_Fonts/up_arrow.png" alt="up_arrow" />
+    </button>
+    <section id="content1">
+      <div class="card">
+        <img src="./IMG_Fonts/lens.png" alt="lens" />
+        <h2 class="card_top">Objektívek</h2>
+        <p>Egy 50mm 1.8-as objektív portrék elkészítéséhez.</p>
+        <p>Egy 17-50mm 2.8 sigma objektív ami úgymond "mindenes".</p>
+        <p>
+          Illetve egy 70-200-as 2.8 sigma objektív a riporttól a sporton
+          keresztül a tájkép illetve portré fotózásig.
+        </p>
+      </div>
+      <div class="card">
+        <img src="./IMG_Fonts/camera3D.png" alt="camera" />
+        <h2 class="card_top">Kamera</h2>
+        <p>
+          A Nikon Z 5 tükör nélküli fényképezőgép strapabíró, könnyű, igazán
+          könnyen kezelhető, és kompatibilis számtalan kompakt, teljes képméretű
+          objektívvel. A képminőség új, izgalmas szintjeit érheti el vele, akár
+          állóképeket, akár videókat készít.
+        </p>
+      </div>
+      <div class="card">
+        <img src="./IMG_Fonts/lightroom.png" alt="lightroom" />
+        <h2 class="card_top">Lightroom</h2>
+        <p>
+          Az Adobe Photoshop Lightroom egy fotósoknak készült szoftver, mellyel
+          nyilvántarthatjuk, visszakereshetjük és rendszerezhetjük
+          fényképeinket, másrészt a legtöbb utómunkát rendkívül gyorsan el
+          tudjuk végezni.
+        </p>
+      </div>
+      <div class="card">
+        <img src="./IMG_Fonts/photoshop.png" alt="photoshop" />
+        <h2 class="card_top">Photoshop</h2>
+        <p>
+          Az Adobe Photoshop egy képszerkesztő és fényképfeldolgozó szoftver,
+          melynek a fejlesztője az Adobe Systems. Retusálja, remixelje munkáját.
+          Fényképek, grafikák, szövegek kombinálásával pompás képek. Könnyen
+          használható sablonokkal és eszközökkel létrehozhatja amit
+          fényképezőgépe nem tud.
+        </p>
+      </div>
+    </section>
+    <section id="card-pictures">
+      <div class="blur_cards_slider">
+        <div class="blur_cards">
+          <div class="blur_card">
+             <h1 class="pic_title">Portré</h1>
+             <div class="images">
+            <img src="./IMG_Photos/p1.jpg" alt="Image_1">
+            <img src="./IMG_Photos/p2.jpg" alt="Image_2">
+            <img src="./IMG_Photos/p3.jpg" alt="Image_3">
+            <img src="./IMG_Photos/p4.jpg" alt="Image_4">
+            <img src="./IMG_Photos/p5.jpg" alt="Image_5">
+            <img src="./IMG_Photos/p6.jpg" alt="Image_6">
+          </div>
+          </div>
+          <div class="blur_card">
+            <h1 class="pic_title">Utcai</h1>
+           <div class="images">
+             <img src="./IMG_Photos/st1.jpg" alt="Image_7">
+             <img src="./IMG_Photos/st2.jpg" alt="Image_8">
+             <img src="./IMG_Photos/st3.jpg" alt="Image_9">
+             <img src="./IMG_Photos/st4.jpg" alt="Image_10">
+             <img src="./IMG_Photos/st5.jpg" alt="Image_11">
+             <img src="./IMG_Photos/st6.jpg" alt="Image_12">
+        </div>
+          </div>
+          <div class="blur_card">
+            <h1 class="pic_title">Sport</h1>
+          <div class="images">
+            <img src="./IMG_Photos/sp1.jpg" alt="Image_13">
+            <img src="./IMG_Photos/sp2.jpg" alt="Image_14">
+            <img src="./IMG_Photos/sp3.jpg" alt="Image_15">
+            <img src="./IMG_Photos/sp4.jpg" alt="Image_16">
+            <img src="./IMG_Photos/sp5.jpg" alt="Image_17">
+            <img src="./IMG_Photos/sp6.jpg" alt="Image_18">
+          </div>
+        </div>
+          </div>
+        </div>
+        <button class="prev-btn"></button>
+        <button class="next-btn"></button>
+    </section>
+    <section id="aboutme">
+      <div class="blureffect">
+        <div class="aboutme">
+          <h6>
+            A fotózásban számtalan módszer és önkifejezési lehetőség van.
+            Személyes kedvencem a portré az esküvő és a rendezvényfotózás, de
+            igazából bármilyen átélt, megélt, értékes pillanatot szeretek
+            megörökíteni. Megtörténik, hogy a színek játéka, máskor egy érdekes
+            szempár pillanatnyi meséje varázsol el. Érdekel az emberek szépsége,
+            egyedisége és a portré fotózás közben az arcokon felfedezhető és
+            megmutatható életek története.
+          </h6>
+          <h6>
+            Szabad kezet kapva de akár egyedi elképzelés alapján is igyekszem
+            olyan emléket adni fotóim által, melyek visszanézése bármikor jó
+            érzéssel tölt el minden megrendelőt aki megtisztelt bizalmával.
+          </h6>
+        </div>
+        <div class="buble1"></div>
+        <div class="buble2"></div>
+        <div class="buble3"></div>
+        <div class="buble4"></div>
+        <div class="pic_me"></div>
+      </div>
+    </section>
+    <section id="Conacts">
+      <div class="Conacts_block">
+        <div class="Patric_part">
+          <div class="phone">
+            <img
+              class="cont_icon"
+              src="./IMG_Fonts/phone-call.png"
+              alt="phone"
+            />
+            <h4>+36-30-167-6586</h4>
+          </div>
+          <div class="mail">
+            <img class="cont_icon" src="./IMG_Fonts/mail.png" alt="email" />
+            <h4>04patrick05@gmail.com</h4>
+          </div>
+          <div class="Social_media">
+            <button onclick="openNewWindow()">
+              <img src="./IMG_Fonts/instagram.png" alt="instagram" />
+            </button>
+            <button onclick="openNewWindow2()">
+              <img src="./IMG_Fonts/facebook.png" alt="facebook" />
+            </button>
+          </div>
+        </div>
+        <div class="Cr_section">
+          <img class="cr_pic" src="./IMG_Fonts/copyright.png" alt="copyright" />
+          <p>2023 Bodó Zoltán, @l3odoZ</p>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </body>
+</html>
