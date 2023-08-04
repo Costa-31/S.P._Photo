@@ -13,6 +13,7 @@
   flex-grow: 3;
   justify-content: center;
 }
+
 .menu {
   height: 100%;
   width: 0;
@@ -77,20 +78,7 @@
   }
 }
 
-/*
-.first_pic -- nevjegykartya -- {
-  display: flex;
-  position: absolute;
-  top:120px;
-  left: 30px;
-  height:300px;
-  width: 500px;
-  background: url(./IMG/sp_card.jpg) center/cover;
-  box-shadow: 0 0 10px #00629F, 0 0 20px #00629F, 0 0 30px #00629F,
-  0 0 40px #00629F, 0 0 70px #00629F, 0 0 80px #00629F, 0 0 100px #00629F,
-  0 0 150px #00629F;
-  transform: rotate(-40deg);
-}*/
+
 
 @keyframes first_pic_overlay {
   from {
@@ -114,6 +102,13 @@ li {
   position: absolute;
   height: 100vh;
 }
+.picanimation2 {
+  display: none;
+  align-items: center;
+  position: absolute;
+  height: 100vh;
+  object-fit: cover;
+}
 .topAnimation {
   height: 34%;
   animation: slide-in-left-top ease-in 3s;
@@ -125,6 +120,19 @@ li {
 .bottomAnimation {
   height: 34%;
   animation: slide-in-left-bottom ease-in 3s;
+}
+.mobileAnimation {
+  display: none;
+  height:100vh;
+  animation: overlayfirst linear 3s;
+}
+@keyframes overlayfirst {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes slide-in-right {
@@ -159,6 +167,7 @@ li {
     opacity: 1;
   }
 }
+
 
 img {
   height: 30px;
@@ -873,34 +882,19 @@ img[alt~="Image_18"] {
   #logo-title {
     display: flex;
     overflow: hidden;
-    background: url(./IMG_Photos/st2.jpg) no-repeat center center fixed;
     height: 100vh;
-    background-size: cover;
-    object-fit: scale-down;
-    animation: overlayfirst linear 3s;
   }
-  @keyframes overlayfirst {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  .mobileAnimation {
+    display: flex;
   }
   .sideOpen {
     background-color: #ffc200;
   }
   .picanimation {
     display: none;
-  }
-  .topAnimation {
-    animation: none;
-  }
-  .midleAnimation {
-    animation: none;
-  }
-  .bottomAnimation {
-    animation: none;
+  } 
+  .picanimation2 {
+    display: flex;
   }
 }
 
