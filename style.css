@@ -715,7 +715,6 @@ img[alt~="Image_18"] {
     margin: 40px;
   }
   
-  
 }
 
 @media screen and (max-width: 1450px) {
@@ -893,6 +892,15 @@ img[alt~="Image_18"] {
   }
   .picanimation {
     display: none;
+  }
+  .topAnimation {
+    animation: none;
+  }
+  .midleAnimation {
+    animation: none;
+  }
+  .bottomAnimation {
+    animation: none;
   }
 }
 
